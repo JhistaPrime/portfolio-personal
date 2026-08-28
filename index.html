@@ -6,32 +6,110 @@
         <title>Rey Miga</title>
         <link rel="stylesheet" href="css/style_reyMiga.css">
     </head>
-    <body>
-        <header>
-            <h1>ReyMiga</h1>
-        </header>
+    <body id="inicio">
+
+        <div class="superior">
+            <h1 id="tituloPrincipal"><a href="#inicio">ReyMiga</a></h1>
+            <a id="barraContacto" href="#contacto">contacto</a>
+        </div>
         <div class="layout-principal">
-            <main class="content">
+            <section class="content">
                 <h2>Nuestras variedades</h2>
                 <div class="contenedor">
-                    <div class="caja">Migas</div>
-                    <div class="caja">Pebetes</div>
-                    <div class="caja">Baguettes</div>
-                    <div class="caja">Arabes</div>
-                    <div class="caja">Pizzas y Pizzetas</div>
+                    <div class="caja"><a href="#migas">Migas</a></div>
+                    <div class="caja"><a href="#pebetes">Pebetes</a></div>
+                    <div class="caja"><a href="#baguettes">Baguettes</a></div>
+                    <div class="caja"><a href="#arabes">Arabes</a></div>
+                    <div class="caja"><a href="#pizzasYPizzetas">Pizzas y Pizzetas</a></div>
                 </div>
-                <h3>Un poco sobre nosotros...</h2>
-                <p>Somos una pequeña empresa familiar dedicada a la elaboración de sangüches fríos 
+            </section>
+            <section>
+                <p>Todos nuestros sangüis pueden encontrarse en:
+                    <ul>
+                        <li>jamon y queso</li>
+                        <li>salame y queso</li>
+                        <li>imperial: ternera, tomate y huevo</li>
+                    </ul>
+                </p>
+                <p>A demas, a nuestros migas los podes pedir de:
+                    <ul>
+                        <li>ternera y queso</li>
+                        <li>jamon, huevo y aceitunas</li>
+                        <li>jamon, morron y aceitunas</li>
+                        <li>jamon y roquefort en pan negro</li>
+                        <li>salame y queso en pan negro</li>
+                    </ul>
+                </p>
+            </section>
+            <section>
+                <div id="migas" class="contenedorProducto">
+                    <h2>Migas</h2>
+                    <div class="muestraImagen">
+                        <img src="img/img_1.jpeg" alt="">
+                        <img src="img/img_2.jpeg" alt="">
+                        <img src="img/img_3.jpeg" alt="">
+                        <img src="img/img_4.jpeg" alt="">
+                        <img src="img/img_5.jpeg" alt="">
+                        <img src="img/img_6.jpeg" alt="">
+                        <img src="img/img_7.jpeg" alt="">
+                        <img src="img/img_8.jpeg" alt="">
+                        <img src="img/img_9.jpeg" alt="">
+                    </div>
+                </div>
+                <div id="pebetes" class="contenedorProducto">
+                    <h2>Pebetes</h2>
+                    <div class="muestraImagen">
+                        <img src="" alt="">
+                        <img src="img/img_10.jpeg" alt="">
+                        <img src="img/img_11.jpeg" alt="">
+                        <img src="img/img_12.jpeg" alt="">
+                    </div>
+                </div>
+                <div id="baguettes" class="contenedorProducto">
+                    <h2>Baguettes</h2>
+                    <div class="muestraImagen">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div id="arabes" class="contenedorProducto">
+                    <h2>Arabes</h2>
+                    <div class="muestraImagen">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div id="pizzasYPizzetas" class="contenedorProducto">
+                    <h2>pizzas y Pizzetas</h2>
+                    <div class="muestraImagen">
+                        <img src="" alt="">
+                    </div>
+                </div>
+
+            </section>
+            <section>
+                <h2>Un poco sobre nosotros...</h2>
+                <p>Somos una pequeña empresa familiar, con varios años en el rubro, dedicada a la elaboración de sangüches fríos 
                 para comercios, eventos y particulares.</p>
-            </main>
+            </section>
+
+            <section id="contacto">
+                <h3>¿Alguna duda?¡contactanos!</h3>
+                <div>Whatsapp: 3875822623 <br><br> Mandanos un correo: <br></div>
+                <form id="form" method="POST">
+                    <input type="text" name="nombre" placeholder="Tu nombre" required>
+                    <input type="email" name="email" placeholder="Tu correo" required>
+                    <textarea name="mensaje" placeholder="Mensaje" rows="4" required></textarea>
+                    <button type="submit" id="btn-submit">Enviar</button>
+                </form>
+            
+            </section>    
+        <footer class="footer"><p>2026 Sanguchería Rey Miga</p></footer>    
         </div>
-        <h3>¿Alguna duda?¡contactanos!</h3>
-        <form id="form" method="POST">
-            <input type="text" name="nombre" placeholder="Tu nombre" required>
-            <input type="email" name="email" placeholder="Tu correo" required>
-            <textarea name="mensaje" placeholder="Mensaje" rows="4" required></textarea>
-            <button type="submit" id="btn-submit">Enviar</button>
-        </form>
-        <footer class="footer"><p>2026 Sanguchería Rey Miga</p></footer>
+        <script type="text/javascript"
+                    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+        <script type="text/javascript">
+            emailjs.init('0kRGcD7h91bg06UkJ')
+        </script>
+        <script src="js/script_reyMiga.js"></script>
     </body>
 </html>

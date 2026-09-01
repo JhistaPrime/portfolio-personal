@@ -77,8 +77,8 @@ h2{
     transition: 0.5s;
 }
 .caja:hover{
-    background-color: #1D2A44; /* Mismo azul de la cabecera */
-    color: #F4F1DE;            /* Letras color crema */
+    background-color: #1D2A44;
+    color: #F4F1DE;           
     box-shadow: 0 0 2em #F26419;
     transform: translateY(-3px);
 }

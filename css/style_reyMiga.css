@@ -124,10 +124,10 @@ section, [id] {
 }
 
 .contenedorProductos {
-    display: flex;              /* Usamos Flexbox en lugar de Grid */
-    flex-wrap: wrap;           /* Permite que las tarjetas pasen a la siguiente fila si no entran */
-    justify-content: center;   /* Centra las tarjetas en CADA fila individualmente */
-    gap: 20px;                 /* Mantiene el espacio exacto de 20px entre tarjetas */
+    display: flex;            
+    flex-wrap: wrap;          
+    justify-content: center;  
+    gap: 20px;                 
     margin-bottom: 30px;
 }
 

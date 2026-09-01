@@ -77,8 +77,8 @@ h2{
     transition: 0.5s;
 }
 .caja:hover{
-    background-color: #1D2A44;
-    color: #F4F1DE;           
+    background-color: #1D2A44; 
+    color: #F4F1DE;            
     box-shadow: 0 0 2em #F26419;
     transform: translateY(-3px);
 }
@@ -123,11 +123,11 @@ section, [id] {
     scroll-margin-top: 100px;
 }
 
-.contenedorProductos{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 260px);
-    gap: 20px;
-    justify-content: center;
+.contenedorProductos {
+    display: flex;              /* Usamos Flexbox en lugar de Grid */
+    flex-wrap: wrap;           /* Permite que las tarjetas pasen a la siguiente fila si no entran */
+    justify-content: center;   /* Centra las tarjetas en CADA fila individualmente */
+    gap: 20px;                 /* Mantiene el espacio exacto de 20px entre tarjetas */
     margin-bottom: 30px;
 }
 
